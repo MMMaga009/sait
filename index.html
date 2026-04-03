@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Для тебя 💖</title>
+<title>Предложение</title>
 <style>
 body {
     margin: 0;
@@ -57,43 +57,43 @@ button {
 <body>
 
 <div id="screen1" class="container">
-    <h1>Привет 🙂</h1>
-    <p>Мне нужно тебе кое-что сказать...</p>
-    <button onclick="next(2)">Продолжить</button>
+    <h1>Сәлем 🙂</h1>
+    <p>Саған бірдеңе айтқым келіп тұр...</p>
+    <button onclick="next(2)">?</button>
 </div>
 
 <div id="screen2" class="container hidden">
-    <h1>Но я немного переживаю 😅</h1>
-    <button onclick="next(3)">Почему?</button>
+    <h1>Айта берейінба? 😅</h1>
+    <button onclick="next(3)">Айта бер!</button>
 </div>
 
 <div id="screen3" class="container hidden">
-    <h1>Потому что это важно для меня ❤️</h1>
-    <button onclick="next(4)">Ладно, говори</button>
+    <h1>Қазір айтамын дайынсыңба?</h1>
+    <button onclick="next(4)">Дайынмын!</button>
 </div>
 
 <div id="screen4" class="container hidden">
-    <h1>Ты точно готова это услышать?</h1>
+    <h1>ТОЧНО ?</h1>
     <button onclick="next(5)">Да</button>
 </div>
 
 <div id="screen5" class="container hidden">
-    <h1>Подожди секунду...</h1>
+    <h1>Күте тұр...</h1>
 </div>
 
 <div id="screen6" class="container hidden">
-    <h1>Ладно... забудь 😅</h1>
-    <button onclick="next(7)">Нет, говори!</button>
+    <h1>Айта берейінба? 😅</h1>
+    <button onclick="next(7)">Тезірек!!!</button>
 </div>
 
 <div id="screen7" class="container hidden">
-    <h1>Хорошо...</h1>
+    <h1>ЖАРАЙДЫ...</h1>
 </div>
 
 <div id="screen8" class="container hidden">
-    <h1>Пойдёшь со мной на вальс? 💃</h1>
-    <button class="yes" onclick="yes()">Да ❤️</button>
-    <button class="no" id="noBtn">Нет 💔</button>
+    <h1>СЕНІМЕН  БІРГЕ  ВАЛЬС  БИЛЕУГЕ  БОЛАДЫМА?</h1>
+    <button class="yes" onclick="yes()">Иә ❤️</button>
+    <button class="no" id="noBtn">Жоқ 💔</button>
 </div>
 
 <script>
@@ -106,7 +106,14 @@ function next(screen) {
 }
 
 function yes() {
-    document.body.innerHTML = `<h1 class="final-text">Я рад ❤️</h1>`;
+    document.body.innerHTML = `
+        <div id="final-text">
+            <p>Мен өте қуаныштымын, сен қалай жауап берсеңде ❤️</p>
+            <p>Бірақ бұл сайттағы жауабың маған көрінбейді✨</p>
+            <p>Сол себепті егер келіссең WHATSAPP-қа келісемін деп жазшы</p>
+            <p>Ал келіспесең просто ИГНОРИРУЙ</p>
+        </div>
+    `;
     for (let i = 0; i < 40; i++) createHeart();
 }
 
